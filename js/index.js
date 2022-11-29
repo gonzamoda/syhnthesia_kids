@@ -98,7 +98,7 @@ function Update() {
   //changing the color of the key:
 
   if (
-    ctx.getImageData(posicionTeclaC.x + 10, canvas.height - 1, 1, 1).data[0] !=
+    ctx.getImageData(posicionTeclaC.x + 20, canvas.height - 1, 1, 1).data[0] !=
     0
   ) {
     teclaC.style.background = "#b0ca1f";
@@ -107,7 +107,7 @@ function Update() {
   }
 
   if (
-    ctx.getImageData(posicionTeclaD.x + 10, canvas.height - 1, 1, 1).data[0] !=
+    ctx.getImageData(posicionTeclaD.x + 20, canvas.height - 1, 1, 1).data[0] !=
     0
   ) {
     teclaD.style.background = "#9ed7e8";
@@ -116,7 +116,7 @@ function Update() {
   }
 
   if (
-    ctx.getImageData(posicionTeclaE.x + 10, canvas.height - 1, 1, 1).data[0] !=
+    ctx.getImageData(posicionTeclaE.x + 20, canvas.height - 1, 1, 1).data[0] !=
     0
   ) {
     teclaE.style.background = "#fdc903";
@@ -125,7 +125,7 @@ function Update() {
   }
 
   if (
-    ctx.getImageData(posicionTeclaF.x + 10, canvas.height - 1, 1, 1).data[0] !=
+    ctx.getImageData(posicionTeclaF.x + 20, canvas.height - 1, 1, 1).data[0] !=
     0
   ) {
     teclaF.style.background = "#e32227";
@@ -134,7 +134,7 @@ function Update() {
   }
 
   if (
-    ctx.getImageData(posicionTeclaG.x + 10, canvas.height - 1, 1, 1).data[0] !=
+    ctx.getImageData(posicionTeclaG.x + 20, canvas.height - 1, 1, 1).data[0] !=
     0
   ) {
     teclaG.style.background = "#ffeb0e";
@@ -143,7 +143,7 @@ function Update() {
   }
 
   if (
-    ctx.getImageData(posicionTeclaA.x + 10, canvas.height - 1, 1, 1).data[0] !=
+    ctx.getImageData(posicionTeclaA.x + 20, canvas.height - 1, 1, 1).data[0] !=
     0
   ) {
     teclaA.style.background = "#854895";
@@ -152,7 +152,7 @@ function Update() {
   }
 
   if (
-    ctx.getImageData(posicionTeclaB.x + 10, canvas.height - 1, 1, 1).data[0] !=
+    ctx.getImageData(posicionTeclaB.x + 20, canvas.height - 1, 1, 1).data[0] !=
     0
   ) {
     teclaB.style.background = "#cd86c6";

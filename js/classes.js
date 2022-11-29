@@ -2,7 +2,7 @@
 
 class Rectangle {
   constructor(x, y, height, color) {
-    this.x = x;
+    this.x = x + 10;
     this.y = y;
     this.height = height;
     this.weight = 42;
