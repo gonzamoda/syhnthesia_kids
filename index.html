@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="bodyContainer">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float: right"><a class="active" href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div id="canvasContainer">
+      <canvas></canvas>
+    </div>
+
+    <div id="pianoContainer2">
+      <div id="teclaC2" class="whiteKey">
+        <ion-icon name="square-outline"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div id="teclaD2" class="whiteKey">
+        <ion-icon name="square-outline"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div id="teclaE2" class="whiteKey">
+        <ion-icon name="square-outline"></ion-icon>
+      </div>
+      <div id="teclaF2" class="whiteKey">
+        <ion-icon name="square-outline"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div id="teclaG2" class="whiteKey">
+        <ion-icon name="square-outline"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div id="teclaA2" class="whiteKey">
+        <ion-icon name="square-outline"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div id="teclaB2" class="whiteKey">
+        <ion-icon name="square-outline"></ion-icon>
+      </div>
+
+      <div onclick=" jsNota(261.63)" id="teclaC" class="whiteKey">
+        <ion-icon name="square"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div onclick=" jsNota(293.66)" id="teclaD" class="whiteKey">
+        <ion-icon name="square"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div onclick=" jsNota(329.63)" id="teclaE" class="whiteKey">
+        <ion-icon name="square"></ion-icon>
+      </div>
+      <div onclick=" jsNota(349.23)" id="teclaF" class="whiteKey">
+        <ion-icon name="square"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div onclick=" jsNota(392.00)" id="teclaG" class="whiteKey">
+        <ion-icon name="square"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div onclick=" jsNota(440.00)" id="teclaA" class="whiteKey">
+        <ion-icon name="square"></ion-icon>
+      </div>
+      <div class="blackKey"></div>
+      <div onclick=" jsNota(493.88)" id="teclaB" class="whiteKey">
+        <ion-icon name="square"></ion-icon>
+      </div>
+    </div>
+
+    <div id="comandContainer">
+      <div class="oculto chico buttonContainer"></div>
+      <div class="oculto chico buttonContainer"></div>
+      <div class="oculto chico buttonContainer"></div>
+
+      <div
+        onclick="window.location.reload()"
+        class="restart chico buttonContainer"
+      >
+        <ion-icon id="restartButton" name="play-skip-back"></ion-icon>
+      </div>
+      <div id="playPauseDiv" onclick="play()" class="play buttonContainer">
+        <ion-icon id="playPauseButton" name="play"></ion-icon>
+      </div>
+
+      <input
+        onclick="velocity(this.id)"
+        type="radio"
+        name="velocity"
+        id="option-1"
+        checked
+      />
+      <input
+        onclick="velocity(this.id)"
+        type="radio"
+        name="velocity"
+        id="option-2"
+      />
+      <input
+        onclick="velocity(this.id)"
+        type="radio"
+        name="velocity"
+        id="option-3"
+      />
+      <input
+        onclick="velocity(this.id)"
+        type="radio"
+        name="velocity"
+        id="option-4"
+      />
+
+      <label
+        for="option-1"
+        class="option option-1 velocity chico buttonContainer"
+      >
+        <span>1</span>
+      </label>
+      <label
+        for="option-2"
+        class="option option-2 velocity chico buttonContainer"
+      >
+        <span>1.2</span>
+      </label>
+      <label
+        for="option-3"
+        class="option option-3 velocity chico buttonContainer"
+      >
+        <span>1.5</span>
+      </label>
+      <label
+        for="option-4"
+        class="option option-4 velocity chico buttonContainer"
+      >
+        <span>2</span>
+      </label>
+    </div>
+
+    <script src="/js/classes.js"></script>
+    <script src="/js/notes.js"></script>
+    <script src="/js/index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

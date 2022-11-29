@@ -1,0 +1,260 @@
+/* general settings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#bodyContainer {
+  height: 100vh;
+}
+
+/* END general settings */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+
+/* END menu */
+
+canvas {
+  background-image: url(/imgs/space_background.jpg);
+  background-position: center;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+
+#canvasContainer {
+  overflow: hidden;
+}
+
+/* Piano */
+#pianoContainer2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 15px;
+  background-color: #000;
+}
+
+#pianoContainer2 .whiteKey {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 50px;
+  height: 120px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#pianoContainer2 .whiteKey:hover {
+  background-color: #f1f1f1;
+}
+
+#pianoContainer2 .whiteKey:active {
+  border-left-color: #00fafe;
+  border-right-color: #00fafe;
+  border-top-color: #00fafe;
+  border-width: 4px;
+}
+
+#pianoContainer2 div ion-icon {
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+#pianoContainer2 .blackKey {
+  width: 25px;
+  height: 50px;
+  background-color: rgb(15, 15, 15);
+  position: relative;
+  left: 13px;
+  margin: 0 0 0 -25px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 1;
+}
+
+#teclaC ion-icon {
+  color: #b0ca1f;
+}
+
+#teclaD ion-icon {
+  color: #9ed7e8;
+}
+
+#teclaE ion-icon {
+  color: #fdc903;
+}
+
+#teclaF ion-icon {
+  color: #e32227;
+}
+
+#teclaG ion-icon {
+  color: #ffeb0e;
+}
+
+#teclaA ion-icon {
+  color: #854895;
+}
+
+#teclaB ion-icon {
+  color: #cd86c6;
+}
+
+#teclaC2 ion-icon {
+  color: #b0ca1f;
+}
+
+#teclaD2 ion-icon {
+  color: #9ed7e8;
+}
+
+#teclaE2 ion-icon {
+  color: #fdc903;
+}
+
+#teclaF2 ion-icon {
+  color: #e32227;
+}
+
+#teclaG2 ion-icon {
+  color: #ffeb0e;
+}
+
+#teclaA2 ion-icon {
+  color: #854895;
+}
+
+#teclaB2 ion-icon {
+  color: #cd86c6;
+}
+
+/* Comandos */
+
+#comandContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  background-color: #000;
+  bottom: 0;
+}
+
+/* play pause button */
+
+.buttonContainer {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background: #000000;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(77, 77, 77);
+  margin: 5px;
+  color: rgb(77, 77, 77);
+}
+
+.play {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.buttonContainer:active {
+  color: rgb(211, 211, 211);
+}
+
+.buttonContainer ion-icon {
+  display: grid;
+  place-items: center;
+  color: rgb(77, 77, 77);
+}
+
+.buttonContainer:active ion-icon {
+  color: #ffffff;
+}
+
+.buttonContainer:hover ion-icon {
+  color: #ffffff;
+}
+
+.buttonContainer:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* END play pause button */
+
+/* restart pause button */
+.chico {
+  padding: 7px;
+  width: 35px;
+  height: 35px;
+  font-size: 1rem;
+}
+
+input:checked + span {
+  color: #ffffff;
+}
+
+.chico input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span,
+#option-3:checked:checked ~ .option-3 span,
+#option-4:checked:checked ~ .option-4 span {
+  color: #fff;
+}
+
+/* END play pause button */
