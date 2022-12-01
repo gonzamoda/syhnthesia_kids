@@ -4,29 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SyhntheKids</title>
+    <title>SyhntheKids - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body id="bodyContainer">
     <nav>
-      <img src="./imgs/Logo_SyntheKids_White.svg" alt="" />
+      <img src="../imgs/Logo_SyntheKids_White.svg" alt="" />
       <ul>
-        <li><a href="./pages/home.html">Home</a></li>
-        <li><a href="#news">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="../index.html">Contact</a></li>
         <li style="float: right">
           <a class="active" href="#about">How to play</a>
         </li>
       </ul>
     </nav>
-    <div id="canvasContainer">
-      <canvas></canvas>
+    <div id="menuContainer">
+      <div class="card">
+        <img src="../imgs/space_background.jpg" alt="" />
+        <div>
+          <h1>Twinktle Twinktle</h1>
+          <h3>easy</h3>
+        </div>
+      </div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
     </div>
 
     <div id="pianoContainer2">
@@ -85,10 +98,10 @@
       </div>
     </div>
 
-    <div id="comandContainer">
-      <div class="logoContainer">
-        <img src="./imgs/Logo_SyntheKids_White.svg" alt="" />
-      </div>
+    <!-- <div id="comandContainer">
+      <div class="oculto chico buttonContainer"></div>
+      <div class="oculto chico buttonContainer"></div>
+      <div class="oculto chico buttonContainer"></div>
 
       <div
         onclick="window.location.reload()"
@@ -150,11 +163,11 @@
       >
         <span>2</span>
       </label>
-    </div>
+    </div> -->
 
-    <script src="js/classes.js"></script>
-    <script src="js/notes.js"></script>
-    <script src="js/index.js"></script>
+    <script src="../js/classes.js"></script>
+    <script src="../js/notes.js"></script>
+    <script src="../js/index.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

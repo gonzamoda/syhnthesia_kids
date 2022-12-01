@@ -216,7 +216,7 @@ function velocity(factor) {
 
 //piano sounds
 function jsNota(frecuencia) {
-  var o = context.createOscillator();
+  let o = context.createOscillator();
   g = context.createGain();
   o.connect(g);
   o.type = "triangle";

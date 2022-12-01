@@ -9,7 +9,7 @@ class Rectangle {
     this.color = color;
     this.vfactor = 1;
 
-    this.dy = +6.55;
+    this.dy = +6;
 
     this.draw = function () {
       ctx.beginPath();
